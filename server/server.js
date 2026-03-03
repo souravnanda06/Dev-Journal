@@ -1,4 +1,5 @@
 import express from 'express'
+import 'dotenv/config'
 import authroutes from './routes/authroutes.js'
 import dashRoute from './routes/dashRoute.js'
 import Connectdb from './config/db.js'
