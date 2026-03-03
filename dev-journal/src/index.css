@@ -1,0 +1,164 @@
+.auth-input {
+  display: block;
+  border-radius: 5px;
+  width: 200px;
+  height: 30px;
+  margin-top: 5px;
+  border-color: rgb(0, 0, 0);
+}
+
+body {
+  background-color: ##f5f5f5;
+}
+.auth-form {
+  border-style: solid;
+  border-color: antiquewhite;
+  border-width: 5px;
+  padding: 30px;
+  border-radius: 5px;
+}
+.btn-auth {
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  margin-left: 50px;
+  margin-top: 5px;
+  border-color: rgb(198, 177, 177);
+  cursor: pointer;
+}
+.formblock {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+}
+.btn-landing {
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  margin-right: 10px;
+
+  cursor: pointer;
+}
+.hero {
+  margin-right: 30px;
+  font-size: 100px;
+}
+.display-nav {
+  /* width: 800px; */
+  
+}
+.nav-container {
+  display: flex;
+  justify-content:space-between;
+  background-color:rgb(0, 0, 0);
+  border: 2px solid rgba(128, 128, 128, 0.179);
+  padding-right: 10px;
+  border-radius: 80px;
+  box-shadow:10px gray;
+  /* margin-bottom: 30px; */
+  margin-left: 150px;
+  margin-right: 150px;
+}
+nav {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  padding: 5px;
+  /* position: fixed; */
+}
+.btn-nav {
+  margin-top: 8px;
+  width: 110px;
+  height: 50px;
+  border-radius: 60px;
+  border: 1px solid white;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  
+ /* font-weight: 400; */
+}
+.logo-container{
+  width: 300px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.logo{
+  font-family:serif;
+  font-weight: 800;
+  font-style: italic;
+  color: azure;
+
+  
+}
+.create-content{
+height: 100vh;
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+align-items: center;
+
+ 
+}
+.Create-form{
+display: flex;
+flex-direction: column;
+/* justify-content: center; */
+/* align-items: center; */
+ border: 2px solid gray;
+ border-radius: 30px;
+ padding: 20px;
+ gap: 10px;
+ color: rgb(0, 0, 0);
+ 
+}
+.Create-input{
+  /* height: 50px; */
+  border-radius: 20px;
+  padding: 20px;
+}
+.create-btn{
+ height:40px ;
+ border-radius: 20px;
+ color: aliceblue;
+ background-color: black;
+}
+.journal-container{
+ /* height: 100vh; */
+ /* display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center; */
+
+}
+.journal-card{
+  border: 2px solid rgb(210, 206, 206);
+  width: 300px;
+  padding: 15px;
+  border-radius: 20px;
+  color: white;
+  background-color: black;
+  height: 370px;
+
+
+  /* display: flex; */
+
+  
+  
+}
+.journal-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
