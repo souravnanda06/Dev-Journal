@@ -1,6 +1,6 @@
 
 
-function JournalCard({_id,title,description,date,onDelete}){
+function JournalCard({_id,title,description,date,onDelete,onUpdate}){
     return<>
     <div className="journal-container">
         <div className="journal-card">
@@ -18,6 +18,13 @@ function JournalCard({_id,title,description,date,onDelete}){
                 onDelete(_id);
             }}
             >Delete</button>
+            <button
+          onClick={()=>{
+            onUpdate(_id)
+          }}
+            >
+                Edit
+            </button>
 
         </div>
     </div>

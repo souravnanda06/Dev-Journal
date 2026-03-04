@@ -6,6 +6,7 @@ import Connectdb from './config/db.js'
 import createRoute from './routes/createRoute.js'
 import journalRoute from './routes/journalRoute.js'
 import deleteRoute from './routes/deleteRoute.js'
+import editRoute from './routes/editRoute.js'
 import cors from 'cors'
 const app = express();
 
@@ -17,6 +18,7 @@ app.use("/api/dev-journal",dashRoute);
 app.use("/api/dev-journal",createRoute);
 app.use("/api/dev-journal",journalRoute);
 app.use("/api/dev-journal",deleteRoute);
+app.use("/api/dev-journal",editRoute)
 Connectdb();
 app.listen(PORT,()=>{
     console.log('http://localhost:3000/')

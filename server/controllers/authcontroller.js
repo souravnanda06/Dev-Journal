@@ -5,9 +5,9 @@ export const login = async (req, res) => {
   const { email, password } = req.body;
   let token = "";
   const user = await User.findOne({ email });
-  console.log(user);
+  
   if (!user) {
-    console.log("invalid email")
+   
     return res.status(400).json({
       message: "invalid user",
       
@@ -15,7 +15,7 @@ export const login = async (req, res) => {
     
   }
   if(password !== user.password ){
-     console.log("invalid password")
+   
     return res.status(400).json({
       message:"invalid password"
     })
@@ -34,7 +34,7 @@ export const login = async (req, res) => {
     message: "Login Successful",
     token,
   });
-  console.log(token);
+ 
 };
 export const register = async (req, res) => {
   try {
@@ -50,7 +50,7 @@ export const register = async (req, res) => {
       password,
     });
     res.status(200).json(user);
-    console.log(`${user.name} registered!`);
+   
   } catch (err) {
     res.status(500).send("Server Down");
     console.error(err.message);

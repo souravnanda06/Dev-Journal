@@ -5,7 +5,7 @@ export const journalController = async (req,res)=>{
     const allJournal = await Journal.find({
         user_id,
     })
-    console.log(allJournal)
+   
     res.status(200).json(allJournal)
-    console.log(allJournal)
+    
 }

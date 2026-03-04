@@ -15,7 +15,7 @@ export const create = async (req, res) => {
     title,
     description,
   })
-  console.log("Journal:",journal)
+
 
   res.status(200).json({
     message:"Journal Created",
