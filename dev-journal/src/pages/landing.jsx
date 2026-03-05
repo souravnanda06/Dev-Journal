@@ -1,8 +1,9 @@
-import { useNavigate } from "react-router-dom";
+
+import { Link } from "react-router-dom";
 
 function LandingPage() {
    
-const navigate = useNavigate();
+
 
 
 
@@ -11,8 +12,8 @@ const navigate = useNavigate();
       <div className="landing-container">
         <div>
           <h1 className="hero">Devloper's Journey</h1>
-          <button className="btn-landing" onClick={()=>{navigate("/login")}}>Login</button>
-          <button className="btn-landing" onClick={()=>{navigate("/register")}} >Register</button>
+          <Link to={"/login"} className="btn-landing">login</Link>
+         <Link to={"/register"}>Register</Link>
         </div>
       </div>
     </>
